@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiru Games</title>
+    <link rel="stylesheet" href="/lib/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand text-colored m-0">TIRU GAMES SHOP</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegação"> <!--  o valor data-bs-toggle="collapse" significa que o botão irá alternar a visibilidade de um elemento que possui a classe '.collapse' quando clicado.
+                Esse elemento em particular é identificado pelo atributo 'data-bs-target', que aponta para o 'ID menu-navegação' que está na linha '23'. Isso indica que quando o botão da barra de navegação é clicado, ele alternará a visibilidade do menu de navegação, que é definido como um elemento colapsável (collapse). -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="menu-navegação">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#destaques">
+                            <i class="bi bi-bookmark-star-fill me-1"></i>
+                            Destaques
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#consoles">
+                            <i class="bi bi-controller me-1"></i>
+                            Consoles
+                        </a>
+                    </li>
+
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#jogos">
+                            <i class="bi bi-joystick me-1"></i>
+                            Jogos
+                        </a>
+                    </li>
+
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#fale-conosco">
+                            <i class="bi bi-person-lines-fill me-1"></i>
+                            Contato
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
+        <section id="destaques">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="/imagens/playstation 55.webp" alt="imagem playstation 5">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="/imagens/xbox series xx.jpg" alt="imagem xbox series x">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="/imagens/nintendo switch.jpg" alt="imagem nintendo switch">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button class="active" type="button" data-bs-target="#carousel" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class="container">
+                <h2 class="text-center text-colored fw-bold pt-5">Jogos em destaque</h2>
+                <div class="carousel slide pb-5 pt-5" id="carousel2" data-bs-ride="carousel">
+                    <div class="carousel-inner ">
+                        <div class="carousel-item active text-center">
+                            <img class="mt-1 rounded" src="/imagens/jogos 1.webp" alt="">
+                            <img class="mt-1 rounded" src="/imagens/jogos 2.webp" alt="">
+                            <img class="mt-1 rounded" src="/imagens/jogos 3.webp" alt="">
+                            <img class="mt-1 rounded" src="/imagens/jogos 4.webp" alt="">
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img class="mt-1 rounded" src="/imagens/jogos 5.webp" alt="">
+                            <img class="mt-1 rounded" src="/imagens/jogos 6.webp" alt="">
+                            <img class="mt-1 rounded" src="/imagens/jogos 7.webp" alt="">
+                            <img class="mt-1 rounded" src="/imagens/jogos 8.webp" alt="">
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img class="mt-1 rounded" src="/imagens/jogos 9.webp" alt="">
+                            <img class="mt-1 rounded" src="/imagens/jogos 10.webp" alt="">
+                            <img class="mt-1 rounded" src="/imagens/jogos 11.webp" alt="">
+                            <img class="mt-1 rounded" src="/imagens/jogos 12.webp" alt="">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-slide="prev" data-bs-target="#carousel2">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-slide="next" data-bs-target="#carousel2">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button class="active" type="button" data-bs-target="#carousel2" data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel2" data-bs-slide-to="2"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="consoles" class="pt-5 pb-5">
+            <h2 class=" text-center fw-bold pt-5 pb-5  console-title">Consoles</h2>
+            <div class="container">
+                <div class="row" >
+                    <div class="col-md-4">
+                        <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                            <img class="d-block w-100 rounded" src="/imagens/playstation 4 consoles.jpg" alt="">
+                            <h3 class="fw-bold mt-2">
+                                <i class="bi bi-controller me-1"></i>
+                                Playstation 4 Pro
+                            </h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quaerat dolor molestiae rerum commodi cumque maxime cupiditate! Optio eius fugit voluptate voluptatibus pariatur esse. Obcaecati asperiores fugiat minima adipisci veniam?</p>
+                            <button class="btn fw-bold text-colored" type="button">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="d-block w-100 rounded" src="/imagens/xbox series s.jpg" alt="">
+                        <h3  class="fw-bold mt-2">
+                            <i class="bi bi-controller me-1"></i>
+                            Xbox Series S
+                        </h3> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non fuga, odit omnis maiores facere ipsum delectus numquam fugiat aperiam vitae impedit laboriosam placeat accusantium reprehenderit consectetur eum illo voluptate magnam.</p>
+                        <button class="btn fw-bold text-colored" type="button">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="d-block w-100 rounded" src="/imagens/nintendo switch 2024.jpeg" alt="">
+                        <h3 class="fw-bold mt-2">
+                            <i class="bi bi-controller me-1"></i>
+                            Nintendo Switch
+                        </h3>  
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dignissimos soluta impedit corrupti quisquam odio perferendis placeat inventore similique consectetur ea, fugiat veritatis dolores, aut distinctio, reprehenderit consequuntur dicta laboriosam?</p>
+                        <button class="btn fw-bold text-colored" type="button">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="jogos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="fw-bold mb-5 text-center text-colored">
+                        Jogos
+                    </h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-jogos">
+                            <button data-bs-toggle="tab" data-bs-target="#esports-games" type="button" class=" fw-bold text-start nav-link text-colored active" >Sports Games</button>
+                            <button data-bs-toggle="tab" data-bs-target="#battle-royale" type="button" class=" fw-bold text-start nav-link text-colored" >Battle Royale</button>
+                            <button data-bs-toggle="tab" data-bs-target="#terror" type="button" class=" fw-bold text-start nav-link text-colored" >Terror</button>
+                            <button data-bs-toggle="tab" data-bs-target="#corrida" type="button" class=" fw-bold text-start nav-link text-colored" >Corrida</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="esports-games">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="/imagens/seção jogos/fifa 24.jpeg" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">FIFA 24</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="/imagens/seção jogos/nba 24.webp" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">NBA 2K24</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="/imagens/seção jogos/pes 24.webp" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">PES 2024</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="/imagens/seção jogos/skater xl.avif" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">SKATER XL</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="/imagens/seção jogos/madden 2024.jpg" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">MADDEN NFL 24</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="battle-royale">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="/imagens/seção jogos/fortnite.jpg" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">FORTNITE</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="/imagens/seção jogos/pubg.jpg" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">BATTLEGROUNDS</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="/imagens/seção jogos/warzone.jpg" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">CALL OF DUTY WARZONE</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="/imagens/seção jogos/H1Z1.jpg" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">H1Z1</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="/imagens/seção jogos/hawked.jpg" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">HAWKED </h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="terror">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="/imagens/seção jogos/RESIDENT EVIL VILAGE.webp" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">RESIDENT EVIL VILAGE</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="/imagens/seção jogos/UNTIL DAWN.webp" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">UNTIL DAWN</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="/imagens/seção jogos/BloodbornE.jpg" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">BLOODBORNE</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="/imagens/seção jogos/AMNSEISA THE BUNKER.webp" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">AMNESIA THE BUNKER</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="/imagens/seção jogos/NIGHTMARES 2.webp" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">NIGHTMARES 2</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="corrida">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="/imagens/seção jogos/FORZAN HORIZON 4.jpg" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">FORZA HORIZON 4</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="/imagens/seção jogos/FORZA MOTORSPORTS.webp" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">FORZA MOTORSPORTS</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="/imagens/seção jogos/HORIZON CHASE TURBO.webp" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">HORIZON CHASE TURBO</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="/imagens/seção jogos/CRASH TEAM RACING NITRO-FUELED.png" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">CRASH TEAM RACING NITRO-FUELED</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="/imagens/seção jogos/GRAN TURISMO SPORT.jpg" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">GRAN TURISMO SPORT</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center fw-bold pb-5">Não encontrou o que procurava? Entre em Contato</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold console-title">Seu Nome:</label>
+                                <input type="text" id="nome" class="form-control" required name="nome">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold console-title">Seu E-mail:</label>
+                                <input type="email" id="email" class="form-control" required name="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold console-title">Seu Telefone (Opcional):</label>
+                                <input type="tel" id="telefone" class="form-control" name="telefone" >
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold console-title">Sua Mensagem:</label>
+                                <textarea class="form-control" id="mensagem" required name="mensagem"></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="fw-bold">
+                                <i class="bi bi-exclamation-triangle"></i>
+                                Dúvidas Frequentes
+                            </h3>
+                        </div>
+                        <div class="row">
+                            <div class="accordion p-4 accordion-flush">
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <button class="accordion-button fw-bold" data-bs-toggle="collapse" data-bs-target="#resposta1">
+                                            Quais as Formas de Pagamento?
+                                        </button>
+                                    </div>
+                                    <div class="accordion-collapse collapse" id="resposta1">
+                                        <div class="accordion-body">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, cumque non accusamus harum commodi vero aliquam maiores dolore porro tempora eaque amet debitis repellat rerum culpa corrupti dolorem quam tenetur?</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-header">
+                                        <button class="accordion-button fw-bold" data-bs-toggle="collapse" data-bs-target="#resposta2">
+                                            Quais as Formas de Envio?
+                                        </button>
+                                    </div>
+                                    <div class="accordion-collapse collapse" id="resposta2">
+                                        <div class="accordion-body">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, cumque non accusamus harum commodi vero aliquam maiores dolore porro tempora eaque amet debitis repellat rerum culpa corrupti dolorem quam tenetur?</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-header">
+                                        <button class="accordion-button fw-bold" data-bs-toggle="collapse" data-bs-target="#resposta3">
+                                            Posso devolver o Produto em quais Casos?
+                                        </button>
+                                    </div>
+                                    <div class="accordion-collapse collapse" id="resposta3">
+                                        <div class="accordion-body">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, cumque non accusamus harum commodi vero aliquam maiores dolore porro tempora eaque amet debitis repellat rerum culpa corrupti dolorem quam tenetur?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/lib/sei la/jquery.mask.min.js"></script>
+    <script src="/lib/sei la/jquery.validate.min.js"></script>
+    <script src="/lib/sei la/messages_pt_BR.min.js"></script>
+    
+    
+    
+    
+    <script>
+        $(document).ready(function() {
+            $('#telefone').mask('(00) 00000-0000')
+
+            $('form').validate({
+                rules: {
+                    nome: {
+                        required: true
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    }
+                },
+                messages: {
+                    nome: 'Por favor, insira o seu nome',
+                    email: 'Por favor, insira seu E-mail',
+                    mensagem: 'Por favor, insira sua Mensagem'
+                }
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.navbar {
+    background-color: #219bff;
+}
+
+.navbar-brand,
+#cabecalho .nav .nav-link,
+.navbar-brand:hover,
+.text-colored{
+    color: #fff;
+}
+
+#cabecalho .nav .nav-link.active,
+#consoles {
+    background-color: #fff;
+    color: #219bff;
+}
+
+
+.navbar-brand {
+    font-family: Poppins, cursive;
+    font-weight: bold;
+}
+
+.navbar-toggler,
+#fale-conosco .btn {
+    background-color:#40a9ff ;
+    color: #fff;
+}
+
+#destaques,
+#jogos {
+    background-color:#80c6ff ;
+}
+
+.carousel-item {
+    max-width: 1920px;
+    max-height: 760px;
+}
+
+.console-title {
+    color: #40a9ff;
+}
+
+
+
+
+.nav-jogos .nav-link.active,
+.nav-jogos .nav-link.active:hover {
+    background-color: #fff;
+    color: #219bff;
+}
+
+.nav-jogos .nav-link:hover {
+    color: #fff ;
+}
+
+#fale-conosco .container form > button  {
+    background-color: #40a9ff;
+    color: #fff;
+}
+
+.accordion {
+    --bs-accordion-btn-bg: #40a9ff ;
+    --bs-accordion-active-bg: #40a9ff ;
+    --bs-accordion-active-color: #fff;
+    --bs-accordion-btn-color: #fff;
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-bg: #3f3f3f;
+    --bs-accordion-color: #fff;
+    --bs-accordion-btn-focus-border-color: unset;
+}
+
+.accordion-button:not(.collapsed) {
+    box-shadow: none;
+}
+
+.accordion-button {
+    border-top: 1px solid #000;
+}
+
+.accordion-item:last-child .accordion-button.collapsed,
+.accordion-item:last-child .accordion-body {
+    border-bottom: 1px solid #000 ;
+}
+
+
+@media (max-width: 767px) {
+    .carousel-item.text-center img {
+        height: 180px;
+    }
+
+    .carousel-item img{
+        height: 220px;
+    }
+}
